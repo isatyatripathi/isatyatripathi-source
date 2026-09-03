@@ -1,0 +1,21 @@
+**/bin/
+**/obj/
+**/.vs/
+**/.idea/
+**/.vscode/
+*.user
+*.suo
+*.cache
+*.log
+TestResults/
+artifacts/
+
+# Local runtime data and secrets
+src/backend/DevSignalStudio.Api/data/*.json
+src/backend/DevSignalStudio.Api/data/backups/
+.env
+.env.*
+!.env.example
+
+# Keep empty runtime data directory
+!src/backend/DevSignalStudio.Api/data/.gitkeep

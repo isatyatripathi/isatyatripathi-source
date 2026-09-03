@@ -1,0 +1,22 @@
+flowchart LR
+    User["Author / Reviewer"]
+    Browser["Local Browser UI<br/>React + Vite + TypeScript"]
+    App["DevSignal Studio<br/>ASP.NET Core 10"]
+    Sources["Approved Tech Sources<br/>RSS • APIs • JSON • Manual"]
+    AI["AI Providers<br/>Ollama • OpenAI • Anthropic • Compatible"]
+    Files[("Local JSON Workspace<br/>Configuration + Snapshots")]
+    Social["LinkedIn / Medium<br/>Manual publication"]
+
+    User -->|research, edit, approve| Browser
+    Browser -->|localhost API| App
+    App -->|bounded fetch| Sources
+    App -->|structured generation| AI
+    App <--> Files
+    Browser -->|copy / export after approval| Social
+
+    classDef human fill:#fff3cd,stroke:#8a6d3b,color:#222;
+    classDef local fill:#e8f4ff,stroke:#1d70a2,color:#102a43;
+    classDef external fill:#f4e8ff,stroke:#7a4ca0,color:#2f1b3d;
+    class User human;
+    class Browser,App,Files local;
+    class Sources,AI,Social external;

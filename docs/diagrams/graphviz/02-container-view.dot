@@ -1,0 +1,40 @@
+digraph G {
+  graph [rankdir=TB, bgcolor="transparent", pad=0.25, nodesep=0.38, ranksep=0.55, compound=true, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=10, margin="0.14,0.09", color="#3b4a54"];
+  edge [color="#5c6b73", arrowsize=0.7, penwidth=1.1];
+  subgraph cluster_ui {
+    label="Browser"; color="#73a7cf"; style="rounded"; fontname="Arial";
+    react [label="React SPA", fillcolor="#e8f4ff"];
+    mermaid [label="Mermaid strict renderer", fillcolor="#e8f4ff"];
+    editor [label="Draft + claim editor", fillcolor="#e8f4ff"];
+  }
+  subgraph cluster_api {
+    label="ASP.NET Core 10 modular monolith"; color="#5b9b68"; style="rounded"; fontname="Arial";
+    endpoints [label="HTTP API", fillcolor="#e8f7eb"];
+    orchestration [label="Application use cases", fillcolor="#e8f7eb"];
+    ingest [label="Ingestion + scoring", fillcolor="#e8f7eb"];
+    draft [label="Drafting + review", fillcolor="#e8f7eb"];
+    sourceports [label="Source connector ports", fillcolor="#e8f7eb"];
+    aiports [label="AI provider ports", fillcolor="#e8f7eb"];
+    worker [label="Daily BackgroundService", fillcolor="#e8f7eb"];
+  }
+  subgraph cluster_infra {
+    label="Infrastructure adapters"; color="#9b76bb"; style="rounded"; fontname="Arial";
+    connectors [label="RSS / Stack Exchange / JSON / Manual", fillcolor="#f4e8ff"];
+    providers [label="Mock / Ollama / OpenAI / Anthropic", fillcolor="#f4e8ff"];
+    store [label="In-memory + atomic JSON snapshots", shape=cylinder, fillcolor="#f4e8ff"];
+  }
+  react -> endpoints;
+  react -> mermaid;
+  react -> editor;
+  endpoints -> orchestration;
+  worker -> orchestration;
+  orchestration -> ingest;
+  orchestration -> draft;
+  ingest -> sourceports;
+  draft -> aiports;
+  sourceports -> connectors;
+  aiports -> providers;
+  ingest -> store;
+  draft -> store;
+}

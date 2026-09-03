@@ -1,0 +1,16 @@
+stateDiagram-v2
+    [*] --> Generating
+    Generating --> NeedsReview: valid structured output
+    Generating --> GenerationFailed: provider/parse failure
+    GenerationFailed --> Generating: retry or fallback
+    NeedsReview --> NeedsReview: edit / partial regenerate
+    NeedsReview --> ValidationBlocked: unsupported claim or unsafe diagram
+    ValidationBlocked --> NeedsReview: resolve issue
+    NeedsReview --> Approved: explicit approval + gates pass
+    NeedsReview --> Rejected: reviewer rejects
+    Approved --> NeedsReview: edit creates new revision
+    Approved --> Exported: export artifact
+    Exported --> Published: manually record publication
+    Rejected --> Archived
+    Published --> [*]
+    Archived --> [*]

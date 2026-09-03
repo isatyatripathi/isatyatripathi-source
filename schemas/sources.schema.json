@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://devsignal.local/schemas/sources.schema.json",
+  "title": "DevSignal source configuration",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "sources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "connectorType",
+          "enabled",
+          "trustWeight"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9-]{1,63}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "connectorType": {
+            "enum": [
+              "rss",
+              "stackexchange",
+              "json-file",
+              "http-json",
+              "manual"
+            ]
+          },
+          "endpoint": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "enabled": {
+            "type": "boolean"
+          },
+          "trustWeight": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "defaultTags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pollMinutes": {
+            "type": "integer",
+            "minimum": 5
+          },
+          "maxItemsPerRun": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 500
+          },
+          "connectorSettings": {
+            "type": "object"
+          },
+          "complianceNotes": {
+            "type": "string",
+            "maxLength": 2000
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

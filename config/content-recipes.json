@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "recipes": [
+    {
+      "id": "linkedin-explainer",
+      "name": "LinkedIn practical explainer",
+      "channel": "linkedin",
+      "enabled": true,
+      "targetCharacters": 2200,
+      "hardMaximumCharacters": 2800,
+      "sections": [
+        "hook",
+        "why-it-matters",
+        "explanation",
+        "practical-takeaways",
+        "question"
+      ],
+      "diagramPreference": [
+        "flowchart",
+        "sequenceDiagram",
+        "mindmap"
+      ],
+      "hashtagRange": {
+        "min": 3,
+        "max": 5
+      },
+      "requirements": [
+        "no unsupported statistics",
+        "plain language",
+        "source references in metadata",
+        "one clear takeaway"
+      ],
+      "voice": [
+        "practical",
+        "curious",
+        "evidence-aware",
+        "not promotional"
+      ]
+    },
+    {
+      "id": "linkedin-system-design",
+      "name": "LinkedIn system design breakdown",
+      "channel": "linkedin",
+      "enabled": true,
+      "targetCharacters": 2400,
+      "hardMaximumCharacters": 2850,
+      "sections": [
+        "scenario",
+        "requirements",
+        "architecture",
+        "trade-offs",
+        "interview-lens",
+        "question"
+      ],
+      "diagramPreference": [
+        "flowchart",
+        "sequenceDiagram",
+        "classDiagram"
+      ],
+      "hashtagRange": {
+        "min": 3,
+        "max": 5
+      },
+      "requirements": [
+        "state assumptions",
+        "include at least one trade-off",
+        "avoid pretending one design is universally correct"
+      ]
+    },
+    {
+      "id": "linkedin-interview-question",
+      "name": "Interview question with reasoning",
+      "channel": "linkedin",
+      "enabled": true,
+      "targetCharacters": 2000,
+      "hardMaximumCharacters": 2700,
+      "sections": [
+        "question",
+        "clarifying-questions",
+        "approach",
+        "complexity",
+        "pitfalls",
+        "discussion"
+      ],
+      "diagramPreference": [
+        "flowchart",
+        "stateDiagram-v2"
+      ],
+      "hashtagRange": {
+        "min": 3,
+        "max": 5
+      },
+      "requirements": [
+        "explain reasoning without overclaiming",
+        "include time and space complexity when relevant"
+      ]
+    },
+    {
+      "id": "linkedin-leadership-lesson",
+      "name": "Engineering leadership lesson",
+      "channel": "linkedin",
+      "enabled": true,
+      "targetCharacters": 2100,
+      "hardMaximumCharacters": 2750,
+      "sections": [
+        "tension",
+        "lesson",
+        "example",
+        "practice",
+        "reflection-question"
+      ],
+      "diagramPreference": [
+        "flowchart",
+        "quadrantChart",
+        "mindmap"
+      ],
+      "hashtagRange": {
+        "min": 2,
+        "max": 4
+      },
+      "requirements": [
+        "avoid invented personal anecdotes",
+        "separate evidence from opinion",
+        "give an actionable practice"
+      ]
+    },
+    {
+      "id": "linkedin-roadmap",
+      "name": "Developer roadmap",
+      "channel": "linkedin",
+      "enabled": true,
+      "targetCharacters": 2500,
+      "hardMaximumCharacters": 2900,
+      "sections": [
+        "goal",
+        "stages",
+        "projects",
+        "validation",
+        "common-traps"
+      ],
+      "diagramPreference": [
+        "flowchart",
+        "timeline",
+        "mindmap"
+      ],
+      "hashtagRange": {
+        "min": 3,
+        "max": 5
+      },
+      "requirements": [
+        "sequence by prerequisites",
+        "include projects and evidence of skill",
+        "avoid tool-list dumping"
+      ]
+    },
+    {
+      "id": "medium-deep-dive",
+      "name": "Medium technical deep dive",
+      "channel": "medium",
+      "enabled": true,
+      "targetWords": 1400,
+      "hardMaximumWords": 2200,
+      "sections": [
+        "summary",
+        "problem",
+        "concepts",
+        "architecture",
+        "implementation",
+        "trade-offs",
+        "testing",
+        "takeaways",
+        "references"
+      ],
+      "diagramPreference": [
+        "flowchart",
+        "sequenceDiagram",
+        "classDiagram",
+        "erDiagram"
+      ],
+      "requirements": [
+        "references section",
+        "code examples must be original or attributed",
+        "state version assumptions",
+        "include limitations"
+      ]
+    },
+    {
+      "id": "weekly-roundup",
+      "name": "Weekly signal roundup",
+      "channel": "linkedin",
+      "enabled": true,
+      "targetCharacters": 2500,
+      "hardMaximumCharacters": 2900,
+      "sections": [
+        "theme",
+        "signals",
+        "connections",
+        "what-to-try",
+        "sources"
+      ],
+      "diagramPreference": [
+        "mindmap",
+        "timeline"
+      ],
+      "hashtagRange": {
+        "min": 3,
+        "max": 5
+      },
+      "requirements": [
+        "use multiple independent sources",
+        "explain why the signals connect",
+        "no copied headlines-only list"
+      ]
+    }
+  ]
+}

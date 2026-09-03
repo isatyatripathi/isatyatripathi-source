@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>DevSignalStudio.Infrastructure</RootNamespace>
+    <AssemblyName>DevSignalStudio.Infrastructure</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\DevSignalStudio.Application\DevSignalStudio.Application.csproj" />
+    <ProjectReference Include="..\DevSignalStudio.Domain\DevSignalStudio.Domain.csproj" />
+  </ItemGroup>
+</Project>

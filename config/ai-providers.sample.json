@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "defaultRoute": "offline",
+  "providers": [
+    {
+      "id": "mock",
+      "type": "mock",
+      "displayName": "Deterministic Mock",
+      "enabled": true,
+      "model": "template-v1",
+      "capabilities": [
+        "text",
+        "structured-output"
+      ],
+      "settings": {
+        "latencyMs": 50
+      }
+    },
+    {
+      "id": "ollama-local",
+      "type": "ollama",
+      "displayName": "Ollama Local",
+      "enabled": false,
+      "baseUrl": "http://localhost:11434",
+      "model": "qwen3",
+      "capabilities": [
+        "text",
+        "structured-output",
+        "embeddings",
+        "streaming"
+      ],
+      "settings": {
+        "timeoutSeconds": 120,
+        "keepAlive": "10m"
+      }
+    },
+    {
+      "id": "openai",
+      "type": "openai",
+      "displayName": "OpenAI API",
+      "enabled": false,
+      "baseUrl": "https://api.openai.com/v1",
+      "model": "configure-me",
+      "apiKeyEnvironmentVariable": "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",
+      "capabilities": [
+        "text",
+        "structured-output",
+        "tool-calling",
+        "embeddings",
+        "streaming"
+      ],
+      "settings": {
+        "timeoutSeconds": 90
+      }
+    },
+    {
+      "id": "anthropic",
+      "type": "anthropic",
+      "displayName": "Anthropic API",
+      "enabled": false,
+      "baseUrl": "https://api.anthropic.com/v1",
+      "model": "configure-me",
+      "apiKeyEnvironmentVariable": "ANTHROPIC_API_KEY",
+      "capabilities": [
+        "text",
+        "structured-output",
+        "tool-calling",
+        "streaming"
+      ],
+      "settings": {
+        "apiVersion": "2023-06-01",
+        "timeoutSeconds": 90
+      }
+    },
+    {
+      "id": "openai-compatible",
+      "type": "openai-compatible",
+      "displayName": "Custom OpenAI-compatible endpoint",
+      "enabled": false,
+      "baseUrl": "http://localhost:1234/v1",
+      "model": "configure-me",
+      "apiKeyEnvironmentVariable": "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",
+      "capabilities": [
+        "text",
+        "structured-output",
+        "streaming"
+      ],
+      "settings": {
+        "timeoutSeconds": 120
+      }
+    }
+  ],
+  "routes": [
+    {
+      "id": "offline",
+      "tasks": {
+        "classify": [
+          "mock"
+        ],
+        "draft": [
+          "mock"
+        ],
+        "diagram": [
+          "mock"
+        ]
+      }
+    },
+    {
+      "id": "local-first",
+      "tasks": {
+        "classify": [
+          "ollama-local",
+          "mock"
+        ],
+        "draft": [
+          "ollama-local",
+          "mock"
+        ],
+        "diagram": [
+          "ollama-local",
+          "mock"
+        ]
+      }
+    },
+    {
+      "id": "balanced",
+      "tasks": {
+        "classify": [
+          "ollama-local",
+          "openai",
+          "mock"
+        ],
+        "draft": [
+          "anthropic",
+          "openai",
+          "ollama-local",
+          "mock"
+        ],
+        "diagram": [
+          "ollama-local",
+          "openai",
+          "mock"
+        ]
+      }
+    }
+  ]
+}

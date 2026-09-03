@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>DevSignalStudio.Application</RootNamespace>
+    <AssemblyName>DevSignalStudio.Application</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DevSignalStudio.Domain\DevSignalStudio.Domain.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,144 @@
+@baseUrl = http://localhost:5180
+@itemId = replace-with-item-id
+@generationRunId = replace-with-generation-run-id
+@draftId = replace-with-draft-id
+@revision = 1
+
+### API index
+GET {{baseUrl}}/api/v1/
+Accept: application/json
+
+### Readiness
+GET {{baseUrl}}/health/ready
+Accept: application/json
+
+### Dashboard
+GET {{baseUrl}}/api/v1/dashboard
+Accept: application/json
+
+### Sources
+GET {{baseUrl}}/api/v1/sources?enabled=true
+Accept: application/json
+
+### Test the deterministic local JSON source
+POST {{baseUrl}}/api/v1/sources/curated-local/test
+Accept: application/json
+
+### Start an ingestion run using only local seed data
+# Copy the returned run ID into a later request when you want to inspect it.
+POST {{baseUrl}}/api/v1/ingestion/runs
+Content-Type: application/json
+Accept: application/json
+
+{
+  "sourceIds": ["curated-local"],
+  "force": true,
+  "generateDrafts": false,
+  "maxCandidates": 10
+}
+
+### List ingestion runs
+GET {{baseUrl}}/api/v1/ingestion/runs?page=1&pageSize=20
+Accept: application/json
+
+### List highest-scoring items
+# Copy an item ID into @itemId above.
+GET {{baseUrl}}/api/v1/items?sort=score-desc&page=1&pageSize=20
+Accept: application/json
+
+### Capture a manual item
+POST {{baseUrl}}/api/v1/items/manual
+Content-Type: application/json
+Accept: application/json
+
+{
+  "sourceId": "manual-local",
+  "title": "A practical .NET and AI architecture note",
+  "url": "https://example.com/dotnet-ai-note",
+  "summary": "A manually curated signal for testing the review workflow.",
+  "content": "Keep provider-specific behavior behind explicit capabilities, preserve provenance, and validate structured output.",
+  "author": "Example author",
+  "tags": ["dotnet", "ai", "architecture"],
+  "notes": "Replace this example with a source you have reviewed."
+}
+
+### Generate a LinkedIn draft from one item
+# Copy the returned generation run ID into @generationRunId above.
+POST {{baseUrl}}/api/v1/drafts
+Content-Type: application/json
+Accept: application/json
+
+{
+  "contentItemIds": ["{{itemId}}"],
+  "recipeId": "linkedin-explainer",
+  "providerRoute": "offline",
+  "instructions": "Explain one practical engineering decision and one trade-off."
+}
+
+### Inspect a draft-generation run
+# When status is completed, copy draftId into @draftId above.
+GET {{baseUrl}}/api/v1/draft-generation/runs/{{generationRunId}}
+Accept: application/json
+
+### Read a draft
+GET {{baseUrl}}/api/v1/drafts/{{draftId}}
+Accept: application/json
+
+### Edit a draft
+# Replace the body and use the current revision from the previous response.
+PUT {{baseUrl}}/api/v1/drafts/{{draftId}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "expectedRevision": {{revision}},
+  "title": "A practical .NET and AI engineering lesson",
+  "hook": "A technology headline becomes valuable when it changes an engineering decision.",
+  "body": "Verify the source, identify the decision, run a reversible experiment, and measure the trade-offs before adopting the pattern.",
+  "hashtags": ["DotNet", "AIEngineering", "SoftwareEngineering"],
+  "mermaid": "flowchart LR\n  A[Source] --> B[Verify]\n  B --> C[Experiment]\n  C --> D[Measure]\n  D --> E[Share]"
+}
+
+### Validate a draft
+POST {{baseUrl}}/api/v1/drafts/{{draftId}}/validate
+Accept: application/json
+
+### Approve a valid draft
+POST {{baseUrl}}/api/v1/drafts/{{draftId}}/approve
+Content-Type: application/json
+Accept: application/json
+
+{
+  "expectedRevision": {{revision}}
+}
+
+### Export Markdown
+GET {{baseUrl}}/api/v1/drafts/{{draftId}}/export?format=markdown
+Accept: text/markdown
+
+### Record manual publication after posting it yourself
+POST {{baseUrl}}/api/v1/drafts/{{draftId}}/mark-published
+Content-Type: application/json
+Accept: application/json
+
+{
+  "expectedRevision": {{revision}},
+  "channel": "linkedin",
+  "url": "https://www.linkedin.com/posts/replace-me"
+}
+
+### Provider configuration and health
+GET {{baseUrl}}/api/v1/providers?includeHealth=true
+Accept: application/json
+
+### Application settings
+GET {{baseUrl}}/api/v1/settings
+Accept: application/json
+
+### Topic taxonomy
+GET {{baseUrl}}/api/v1/topics
+Accept: application/json
+
+### Content recipes
+GET {{baseUrl}}/api/v1/recipes
+Accept: application/json

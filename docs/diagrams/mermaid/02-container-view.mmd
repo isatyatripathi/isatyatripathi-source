@@ -1,0 +1,41 @@
+flowchart TB
+    subgraph UI["Browser"]
+        React["React SPA"]
+        Mermaid["Mermaid strict renderer"]
+        Editor["Draft + claim editor"]
+    end
+
+    subgraph API["ASP.NET Core 10 modular monolith"]
+        Endpoints["HTTP API / Problem Details"]
+        Orchestrator["Application use cases"]
+        Ingestion["Ingestion + scoring"]
+        Drafting["Drafting + review"]
+        SourcePorts["Source connector ports"]
+        AiPorts["AI provider ports"]
+        Worker["Daily BackgroundService"]
+    end
+
+    subgraph Infra["Infrastructure adapters"]
+        RSS["RSS / Atom"]
+        Stack["Stack Exchange"]
+        Json["Custom JSON / manual"]
+        Providers["Mock / Ollama / OpenAI / Anthropic"]
+        Store[("In-memory repositories<br/>+ atomic JSON snapshots")]
+    end
+
+    React --> Endpoints
+    React --> Mermaid
+    React --> Editor
+    Endpoints --> Orchestrator
+    Worker --> Orchestrator
+    Orchestrator --> Ingestion
+    Orchestrator --> Drafting
+    Ingestion --> SourcePorts
+    Drafting --> AiPorts
+    SourcePorts --> RSS
+    SourcePorts --> Stack
+    SourcePorts --> Json
+    AiPorts --> Providers
+    Ingestion --> Store
+    Drafting --> Store
+    Orchestrator --> Store

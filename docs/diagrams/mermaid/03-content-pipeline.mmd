@@ -1,0 +1,20 @@
+flowchart LR
+    A["Schedule / Run now"] --> B["Fetch enabled sources"]
+    B --> C["Normalize + provenance"]
+    C --> D["Canonical URL + fingerprint"]
+    D --> E{"Duplicate?"}
+    E -->|Yes| F["Link and archive duplicate"]
+    E -->|No| G["Deterministic filter"]
+    G --> H["Weighted relevance score"]
+    H --> I["Optional AI classification"]
+    I --> J{"Above threshold<br/>and novel?"}
+    J -->|No| K["Archive / roundup pool"]
+    J -->|Yes| L["Select recipe + provider route"]
+    L --> M["Generate structured draft"]
+    M --> N["Claim + reference validation"]
+    N --> O["Generate and sanitize Mermaid"]
+    O --> P["Human review queue"]
+    P --> Q{"Approved?"}
+    Q -->|Edit| P
+    Q -->|Reject| R["Retain feedback"]
+    Q -->|Yes| S["Export for manual posting"]

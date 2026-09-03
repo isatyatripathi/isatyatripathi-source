@@ -1,0 +1,16 @@
+flowchart LR
+    subgraph Workstation["Developer workstation"]
+        Browser["Browser<br/>localhost:5173 dev"]
+        Api["ASP.NET Core API<br/>localhost:5210"]
+        Worker["Daily worker<br/>same process"]
+        Workspace[("config/ + data/")]
+        Ollama["Ollama optional<br/>localhost:11434"]
+        Browser --> Api
+        Worker --> Api
+        Api <--> Workspace
+        Api --> Ollama
+    end
+    Internet["Approved feeds and APIs"]
+    CloudAI["Enabled hosted AI providers"]
+    Api --> Internet
+    Api --> CloudAI

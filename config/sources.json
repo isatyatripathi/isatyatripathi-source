@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "dotnet-blog",
+      "name": ".NET Blog",
+      "connectorType": "rss",
+      "endpoint": "https://devblogs.microsoft.com/dotnet/feed/",
+      "enabled": true,
+      "trustWeight": 0.95,
+      "defaultTags": [
+        "dotnet",
+        "microsoft",
+        "official"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 30,
+      "complianceNotes": "Official public RSS feed; retain metadata and short excerpts."
+    },
+    {
+      "id": "aws-developer-blog",
+      "name": "AWS Developer Tools Blog",
+      "connectorType": "rss",
+      "endpoint": "https://aws.amazon.com/blogs/developer/feed/",
+      "enabled": true,
+      "trustWeight": 0.9,
+      "defaultTags": [
+        "aws",
+        "cloud",
+        "official"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 20,
+      "complianceNotes": "Official public RSS feed."
+    },
+    {
+      "id": "docker-blog",
+      "name": "Docker Blog",
+      "connectorType": "rss",
+      "endpoint": "https://www.docker.com/blog/feed/",
+      "enabled": true,
+      "trustWeight": 0.85,
+      "defaultTags": [
+        "docker",
+        "containers"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 20,
+      "complianceNotes": "Public RSS feed; summarize and link to source."
+    },
+    {
+      "id": "kubernetes-blog",
+      "name": "Kubernetes Blog",
+      "connectorType": "rss",
+      "endpoint": "https://kubernetes.io/feed.xml",
+      "enabled": true,
+      "trustWeight": 0.9,
+      "defaultTags": [
+        "kubernetes",
+        "cloud-native",
+        "official"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 20,
+      "complianceNotes": "Official public feed."
+    },
+    {
+      "id": "stackoverflow-blog",
+      "name": "Stack Overflow Blog",
+      "connectorType": "rss",
+      "endpoint": "https://stackoverflow.blog/feed/",
+      "enabled": true,
+      "trustWeight": 0.75,
+      "defaultTags": [
+        "software-engineering",
+        "community"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 20,
+      "complianceNotes": "Public feed; store metadata and brief excerpts."
+    },
+    {
+      "id": "medium-dotnet",
+      "name": "Medium tag: dotnet",
+      "connectorType": "rss",
+      "endpoint": "https://medium.com/feed/tag/dotnet",
+      "enabled": true,
+      "trustWeight": 0.6,
+      "defaultTags": [
+        "dotnet",
+        "medium",
+        "community"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 20,
+      "complianceNotes": "Medium public tag RSS; paywalled full text is not expected."
+    },
+    {
+      "id": "medium-generative-ai",
+      "name": "Medium tag: generative-ai",
+      "connectorType": "rss",
+      "endpoint": "https://medium.com/feed/tag/generative-ai",
+      "enabled": true,
+      "trustWeight": 0.55,
+      "defaultTags": [
+        "ai",
+        "medium",
+        "community"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 20,
+      "complianceNotes": "Community source; authority score is lower and claims need corroboration."
+    },
+    {
+      "id": "stackexchange-targeted",
+      "name": "Stack Overflow targeted questions",
+      "connectorType": "stackexchange",
+      "endpoint": "https://api.stackexchange.com/2.3/questions",
+      "enabled": true,
+      "trustWeight": 0.7,
+      "defaultTags": [
+        "stackoverflow",
+        "community",
+        "questions"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 40,
+      "connectorSettings": {
+        "site": "stackoverflow",
+        "tagged": "c#;.net;asp.net-core;reactjs;azure;docker;large-language-model",
+        "sort": "activity",
+        "order": "desc",
+        "filter": "default"
+      },
+      "complianceNotes": "Use the documented Stack Exchange API and honor backoff/quota fields."
+    },
+    {
+      "id": "curated-local",
+      "name": "Curated local JSON",
+      "connectorType": "json-file",
+      "endpoint": "config/curated-items.json",
+      "enabled": true,
+      "trustWeight": 0.8,
+      "defaultTags": [
+        "curated",
+        "manual"
+      ],
+      "pollMinutes": 1440,
+      "maxItemsPerRun": 100,
+      "complianceNotes": "User-curated metadata and notes."
+    },
+    {
+      "id": "manual-local",
+      "name": "Manual capture",
+      "connectorType": "manual",
+      "enabled": true,
+      "trustWeight": 0.8,
+      "defaultTags": [
+        "manual",
+        "curated"
+      ],
+      "maxItemsPerRun": 1,
+      "complianceNotes": "User-entered metadata and notes. The connector performs no crawling."
+    },
+    {
+      "id": "linkedin-manual",
+      "name": "LinkedIn manual capture",
+      "connectorType": "manual",
+      "endpoint": null,
+      "enabled": false,
+      "trustWeight": 0.65,
+      "defaultTags": [
+        "linkedin",
+        "manual"
+      ],
+      "complianceNotes": "Do not scrape. Add a link, author, title, and your own notes manually or through an authorized future API."
+    },
+    {
+      "id": "quora-manual",
+      "name": "Quora manual capture",
+      "connectorType": "manual",
+      "endpoint": null,
+      "enabled": false,
+      "trustWeight": 0.5,
+      "defaultTags": [
+        "quora",
+        "manual"
+      ],
+      "complianceNotes": "Do not scrape. Curate links and your own summary in the custom JSON file."
+    },
+    {
+      "id": "edureka-manual",
+      "name": "Edureka manual/RSS capture",
+      "connectorType": "manual",
+      "endpoint": null,
+      "enabled": false,
+      "trustWeight": 0.45,
+      "defaultTags": [
+        "edureka",
+        "manual"
+      ],
+      "complianceNotes": "Enable an approved public feed when verified; otherwise use manual JSON metadata."
+    },
+    {
+      "id": "callbackhell-manual",
+      "name": "Callback Hell reference",
+      "connectorType": "manual",
+      "endpoint": null,
+      "enabled": false,
+      "trustWeight": 0.6,
+      "defaultTags": [
+        "javascript",
+        "async",
+        "manual"
+      ],
+      "complianceNotes": "Treat as a reference source; use manual capture unless an approved feed is available."
+    }
+  ]
+}

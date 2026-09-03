@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "displayName": "Satya",
+    "professionalDirection": "Senior software engineering leader growing a visible profile around full-stack AI-powered .NET engineering",
+    "audiences": [
+      ".NET developers",
+      "aspiring senior engineers",
+      "engineering leads",
+      "full-stack developers adopting AI"
+    ],
+    "voice": [
+      "practical",
+      "clear",
+      "curious",
+      "evidence-aware",
+      "humble about uncertainty",
+      "actionable",
+      "source"
+    ],
+    "avoid": [
+      "hype",
+      "fake urgency",
+      "unsupported statistics",
+      "invented personal stories",
+      "generic motivational filler",
+      "copied phrasing"
+    ],
+    "contentPillars": [
+      "AI-powered .NET",
+      "system design",
+      "engineering leadership",
+      "developer growth",
+      "cloud and DevOps",
+      "performance and reliability"
+    ],
+    "defaultLanguage": "en",
+    "manualPublishingOnly": true
+  },
+  "schedule": {
+    "enabled": true,
+    "localTime": "07:00",
+    "runOnStartupWhenOverdue": true,
+    "maximumRunsPerDay": 10,
+    "generateDrafts": true
+  },
+  "storage": {
+    "mode": "JsonSnapshot",
+    "directory": "data",
+    "backupCount": 10
+  }
+}

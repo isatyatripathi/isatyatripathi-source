@@ -1,0 +1,21 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.25, nodesep=0.42, ranksep=0.55, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=10, margin="0.14,0.09", fillcolor="#e8f4ff", color="#2d6f9f"];
+  edge [fontname="Arial", fontsize=8, color="#5c6b73", arrowsize=0.7];
+  generating [label="Generating", fillcolor="#f4e8ff", color="#7a4ca0"];
+  review [label="Needs review", fillcolor="#fff3cd", color="#8a6d3b"];
+  blocked [label="Validation blocked", fillcolor="#fde2e2", color="#a74646"];
+  approved [label="Approved", fillcolor="#e8f7eb", color="#5b9b68"];
+  rejected [label="Rejected", fillcolor="#f3f3f3", color="#777777"];
+  exported [label="Exported", fillcolor="#e8f7eb", color="#5b9b68"];
+  published [label="Published (recorded)", fillcolor="#e8f7eb", color="#5b9b68"];
+  generating -> review [label="valid output"];
+  review -> review [label="edit / partial regenerate"];
+  review -> blocked [label="claim or diagram issue"];
+  blocked -> review [label="resolve"];
+  review -> approved [label="explicit approval"];
+  review -> rejected [label="reject"];
+  approved -> review [label="new edit"];
+  approved -> exported [label="export"];
+  exported -> published [label="manual post + record URL"];
+}

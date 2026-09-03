@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DevSignalStudio.Tests</RootNamespace>
+    <AssemblyName>DevSignalStudio.Tests</AssemblyName>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <ProjectReference Include="..\..\..\src\backend\DevSignalStudio.Application\DevSignalStudio.Application.csproj" />
+    <ProjectReference Include="..\..\..\src\backend\DevSignalStudio.Domain\DevSignalStudio.Domain.csproj" />
+    <ProjectReference Include="..\..\..\src\backend\DevSignalStudio.Infrastructure\DevSignalStudio.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>

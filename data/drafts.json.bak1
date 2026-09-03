@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "savedAt": "2026-08-31T01:43:49.911366+00:00",
+  "items": [
+    {
+      "id": "draft_e21c94b935ab43fba97d0d31941f74f3",
+      "status": "inReview",
+      "channel": "linkedin",
+      "recipeId": "linkedin-explainer",
+      "contentItemIds": [
+        "item_6b950c973c61b3988242ae0d"
+      ],
+      "revision": 1,
+      "revisions": [
+        {
+          "revision": 1,
+          "content": {
+            "title": "A practical way to learn from: From dotnet run to Foundry Hosted Agent in 3 lines of C#",
+            "hook": "A tech headline becomes useful only when it changes an engineering decision. Here is one way to turn this DevOps and Platform Engineering signal into practice.",
+            "body": "Why it matters\nThe useful question is not \u201CIs DevOps and Platform Engineering popular?\u201D It is \u201CWhich decision could this signal improve in a real .NET product?\u201D\n\nA practical learning loop\n1. Verify the source and separate facts from opinion.\n2. Map the idea to one architecture boundary or developer workflow.\n3. Build the smallest experiment that can fail safely.\n4. Measure quality, latency, cost, operability, and developer effort.\n5. Share the result, including the limitation.\n\nSource context\nA couple of weeks ago I was talking with a couple of friends who are building agents with Microsoft Agent Framework. The demos were great, the agents were smart, everyone was happy. And then one of them asked the question: \u201COK, the agent is done\u2026 now, how do I...\n\nThe trade-off\nMoving quickly helps learning, but copying a pattern without requirements creates accidental complexity. Prefer a reversible experiment and an explicit exit criterion.\n\nOne action\nCreate a 60\u201390 minute spike that produces evidence: a test, trace, benchmark, ADR, or working vertical slice.\n\nWhat evidence would make you adopt\u2014or reject\u2014this idea?",
+            "hashtags": [
+              "#DevOps",
+              "#DotNet",
+              "#Azure",
+              "#AIEngineering",
+              "#SoftwareEngineering"
+            ],
+            "mermaid": "flowchart LR\n    A[Source signal: From dotnet run to Foundry Hosted Agent in...] --\u003E B[Verify facts]\n    B --\u003E C[Map to DevOps and Platform Engineering decision]\n    C --\u003E D[Build reversible experiment]\n    D --\u003E E[Measure quality and trade-offs]\n    E --\u003E F[Share evidence]"
+          },
+          "savedAt": "2026-08-31T01:43:49.728381+00:00",
+          "savedBy": "ai"
+        }
+      ],
+      "references": [
+        {
+          "contentItemId": "item_6b950c973c61b3988242ae0d",
+          "title": "From dotnet run to Foundry Hosted Agent in 3 lines of C#",
+          "url": "https://devblogs.microsoft.com/dotnet/from-dotnet-run-to-foundry-hosted-agent-in-3-lines-of-csharp/",
+          "author": "Bruno Capuano",
+          "publishedAt": "2026-08-24T19:00:00+00:00"
+        }
+      ],
+      "claims": [
+        {
+          "text": "The source focuses on \u0027From dotnet run to Foundry Hosted Agent in 3 lines of C#\u0027.",
+          "supportingContentItemIds": [
+            "item_6b950c973c61b3988242ae0d"
+          ],
+          "confidence": "source-backed",
+          "needsReview": false
+        }
+      ],
+      "validation": {
+        "issues": [],
+        "validatedAt": "2026-08-31T01:43:49.730933+00:00",
+        "isValid": true
+      },
+      "generation": {
+        "providerId": "mock",
+        "providerType": "mock",
+        "model": "template-v1",
+        "routeId": "offline",
+        "durationMilliseconds": 60,
+        "fallbackErrors": [],
+        "generatedAt": "2026-08-31T01:43:49.728381+00:00"
+      },
+      "createdAt": "2026-08-31T01:43:49.728381+00:00",
+      "updatedAt": "2026-08-31T01:43:49.728381+00:00"
+    },
+    {
+      "id": "draft_2ea67a04ec1447ce950ec66277e88f77",
+      "status": "inReview",
+      "channel": "linkedin",
+      "recipeId": "linkedin-explainer",
+      "contentItemIds": [
+        "item_e72d6bd135f96bad7bea5f0b"
+      ],
+      "revision": 1,
+      "revisions": [
+        {
+          "revision": 1,
+          "content": {
+            "title": "A practical way to learn from: How Uno Platform uses .NET, MCP, and AI to build high quality apps",
+            "hook": "A tech headline becomes useful only when it changes an engineering decision. Here is one way to turn this AI Engineering signal into practice.",
+            "body": "Why it matters\nThe useful question is not \u201CIs AI Engineering popular?\u201D It is \u201CWhich decision could this signal improve in a real .NET product?\u201D\n\nA practical learning loop\n1. Verify the source and separate facts from opinion.\n2. Map the idea to one architecture boundary or developer workflow.\n3. Build the smallest experiment that can fail safely.\n4. Measure quality, latency, cost, operability, and developer effort.\n5. Share the result, including the limitation.\n\nSource context\nThis is a guest post by Sam Basu. Sam is a technologist, author, speaker, Microsoft MVP and Developer Advocate for Uno Platform. If you\u2019ve spent any time building software in the last couple of years, you\u2019ve felt the shift. AI is no longer a novelty sitting on...\n\nThe trade-off\nMoving quickly helps learning, but copying a pattern without requirements creates accidental complexity. Prefer a reversible experiment and an explicit exit criterion.\n\nOne action\nCreate a 60\u201390 minute spike that produces evidence: a test, trace, benchmark, ADR, or working vertical slice.\n\nWhat evidence would make you adopt\u2014or reject\u2014this idea?",
+            "hashtags": [
+              "#AIEngineering",
+              "#MCP",
+              "#Azure",
+              "#SoftwareEngineering"
+            ],
+            "mermaid": "flowchart LR\n    A[Source signal: How Uno Platform uses NET MCP and AI to bu...] --\u003E B[Verify facts]\n    B --\u003E C[Map to AI Engineering decision]\n    C --\u003E D[Build reversible experiment]\n    D --\u003E E[Measure quality and trade-offs]\n    E --\u003E F[Share evidence]"
+          },
+          "savedAt": "2026-08-31T01:43:49.795189+00:00",
+          "savedBy": "ai"
+        }
+      ],
+      "references": [
+        {
+          "contentItemId": "item_e72d6bd135f96bad7bea5f0b",
+          "title": "How Uno Platform uses .NET, MCP, and AI to build high quality apps",
+          "url": "https://devblogs.microsoft.com/dotnet/how-uno-platform-uses-dotnet-mcp-ai-to-build-high-quality-apps/",
+          "author": "Sam Basu",
+          "publishedAt": "2026-08-27T17:00:00+00:00"
+        }
+      ],
+      "claims": [
+        {
+          "text": "The source focuses on \u0027How Uno Platform uses .NET, MCP, and AI to build high quality apps\u0027.",
+          "supportingContentItemIds": [
+            "item_e72d6bd135f96bad7bea5f0b"
+          ],
+          "confidence": "source-backed",
+          "needsReview": false
+        }
+      ],
+      "validation": {
+        "issues": [],
+        "validatedAt": "2026-08-31T01:43:49.795245+00:00",
+        "isValid": true
+      },
+      "generation": {
+        "providerId": "mock",
+        "providerType": "mock",
+        "model": "template-v1",
+        "routeId": "offline",
+        "durationMilliseconds": 52,
+        "fallbackErrors": [],
+        "generatedAt": "2026-08-31T01:43:49.795189+00:00"
+      },
+      "createdAt": "2026-08-31T01:43:49.795189+00:00",
+      "updatedAt": "2026-08-31T01:43:49.795189+00:00"
+    },
+    {
+      "id": "draft_a8f0ae75b5f9471fa716a2cfa012fd5a",
+      "status": "inReview",
+      "channel": "linkedin",
+      "recipeId": "linkedin-interview-question",
+      "contentItemIds": [
+        "item_03a9e9ffa7adb0fca2d97b26"
+      ],
+      "revision": 1,
+      "revisions": [
+        {
+          "revision": 1,
+          "content": {
+            "title": "A practical way to learn from: MinIO End of Life: How to Stay Patched and Audit-Ready with Docker ELS",
+            "hook": "A tech headline becomes useful only when it changes an engineering decision. Here is one way to turn this Performance and Reliability signal into practice.",
+            "body": "Question\nHow would you evaluate and integrate the idea behind \u201CMinIO End of Life: How to Stay Patched and Audit-Ready with Docker ELS\u201D into an existing full-stack .NET system?\n\nClarifying questions\nWhat problem are we solving? What is the expected traffic? Which data is sensitive? What is the failure budget? Must the design work offline?\n\nApproach\nStart with contracts and boundaries. Keep deterministic validation before AI or remote calls, use cancellation and timeouts, preserve source provenance, and make the risky dependency replaceable.\n\nComplexity\nDiscuss both computational complexity and operational complexity: latency, retries, rate limits, cost, observability, and recovery.\n\nPitfall\nDo not jump directly to a product name. A strong answer connects requirements to a design and then explains why a technology fits.\n\nSource context\nMinIO reached end of life in February 2026. Docker Extended Lifecycle Support (ELS) keeps end-of-life software like it patched, compliant, and audit-ready for up to five years, covering versions upstream no longer supports all the way up to entire projects. On...\n\nWhat trade-off would you expect a senior candidate to surface first?",
+            "hashtags": [
+              "#Performance",
+              "#AIEngineering",
+              "#DevOps",
+              "#EngineeringLeadership",
+              "#SoftwareEngineering"
+            ],
+            "mermaid": "flowchart LR\n    A[Source signal: MinIO End of Life How to Stay Patched and ...] --\u003E B[Verify facts]\n    B --\u003E C[Map to Performance and Reliability decision]\n    C --\u003E D[Build reversible experiment]\n    D --\u003E E[Measure quality and trade-offs]\n    E --\u003E F[Share evidence]"
+          },
+          "savedAt": "2026-08-31T01:43:49.85175+00:00",
+          "savedBy": "ai"
+        }
+      ],
+      "references": [
+        {
+          "contentItemId": "item_03a9e9ffa7adb0fca2d97b26",
+          "title": "MinIO End of Life: How to Stay Patched and Audit-Ready with Docker ELS",
+          "url": "https://www.docker.com/blog/minio-end-of-life-how-to-stay-patched-and-audit-ready-with-docker-els/",
+          "author": "Vishrut Iyengar",
+          "publishedAt": "2026-08-24T13:00:00+00:00"
+        }
+      ],
+      "claims": [
+        {
+          "text": "The source focuses on \u0027MinIO End of Life: How to Stay Patched and Audit-Ready with Docker ELS\u0027.",
+          "supportingContentItemIds": [
+            "item_03a9e9ffa7adb0fca2d97b26"
+          ],
+          "confidence": "source-backed",
+          "needsReview": false
+        }
+      ],
+      "validation": {
+        "issues": [],
+        "validatedAt": "2026-08-31T01:43:49.851876+00:00",
+        "isValid": true
+      },
+      "generation": {
+        "providerId": "mock",
+        "providerType": "mock",
+        "model": "template-v1",
+        "routeId": "offline",
+        "durationMilliseconds": 52,
+        "fallbackErrors": [],
+        "generatedAt": "2026-08-31T01:43:49.85175+00:00"
+      },
+      "createdAt": "2026-08-31T01:43:49.85175+00:00",
+      "updatedAt": "2026-08-31T01:43:49.85175+00:00"
+    },
+    {
+      "id": "draft_d566026824f54e2baab30d7676b57696",
+      "status": "inReview",
+      "channel": "linkedin",
+      "recipeId": "linkedin-explainer",
+      "contentItemIds": [
+        "item_a5ef1c0c4be566ed6abea458"
+      ],
+      "revision": 1,
+      "revisions": [
+        {
+          "revision": 1,
+          "content": {
+            "title": "A practical way to learn from: Get started with the Agent Toolkit for AWS in the AWS CLI",
+            "hook": "A tech headline becomes useful only when it changes an engineering decision. Here is one way to turn this MCP, Prompt Engineering, and AI Tooling signal into practice.",
+            "body": "Why it matters\nThe useful question is not \u201CIs MCP, Prompt Engineering, and AI Tooling popular?\u201D It is \u201CWhich decision could this signal improve in a real .NET product?\u201D\n\nA practical learning loop\n1. Verify the source and separate facts from opinion.\n2. Map the idea to one architecture boundary or developer workflow.\n3. Build the smallest experiment that can fail safely.\n4. Measure quality, latency, cost, operability, and developer effort.\n5. Share the result, including the limitation.\n\nSource context\nAI coding agents such as Kiro , Claude Code , Codex , Cursor , and others play an increasingly important role in developer workflows. They write code, fix bugs, scaffold projects, and build infrastructure. By default, these agents have general knowledge of AWS...\n\nThe trade-off\nMoving quickly helps learning, but copying a pattern without requirements creates accidental complexity. Prefer a reversible experiment and an explicit exit criterion.\n\nOne action\nCreate a 60\u201390 minute spike that produces evidence: a test, trace, benchmark, ADR, or working vertical slice.\n\nWhat evidence would make you adopt\u2014or reject\u2014this idea?",
+            "hashtags": [
+              "#MCP",
+              "#AWS",
+              "#AIEngineering",
+              "#SoftwareEngineering"
+            ],
+            "mermaid": "flowchart LR\n    A[Source signal: Get started with the Agent Toolkit for AWS...] --\u003E B[Verify facts]\n    B --\u003E C[Map to MCP Prompt Engineering and AI Tooling decision]\n    C --\u003E D[Build reversible experiment]\n    D --\u003E E[Measure quality and trade-offs]\n    E --\u003E F[Share evidence]"
+          },
+          "savedAt": "2026-08-31T01:43:49.911248+00:00",
+          "savedBy": "ai"
+        }
+      ],
+      "references": [
+        {
+          "contentItemId": "item_a5ef1c0c4be566ed6abea458",
+          "title": "Get started with the Agent Toolkit for AWS in the AWS CLI",
+          "url": "https://aws.amazon.com/blogs/developer/get-started-with-the-agent-toolkit-for-aws-in-the-aws-cli/",
+          "author": "Andrew Asseily",
+          "publishedAt": "2026-08-26T18:14:37+00:00"
+        }
+      ],
+      "claims": [
+        {
+          "text": "The source focuses on \u0027Get started with the Agent Toolkit for AWS in the AWS CLI\u0027.",
+          "supportingContentItemIds": [
+            "item_a5ef1c0c4be566ed6abea458"
+          ],
+          "confidence": "source-backed",
+          "needsReview": false
+        }
+      ],
+      "validation": {
+        "issues": [],
+        "validatedAt": "2026-08-31T01:43:49.911337+00:00",
+        "isValid": true
+      },
+      "generation": {
+        "providerId": "mock",
+        "providerType": "mock",
+        "model": "template-v1",
+        "routeId": "offline",
+        "durationMilliseconds": 52,
+        "fallbackErrors": [],
+        "generatedAt": "2026-08-31T01:43:49.911248+00:00"
+      },
+      "createdAt": "2026-08-31T01:43:49.911248+00:00",
+      "updatedAt": "2026-08-31T01:43:49.911248+00:00"
+    }
+  ]
+}

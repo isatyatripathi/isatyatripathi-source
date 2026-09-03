@@ -1,0 +1,46 @@
+classDiagram
+    class IContentSourceConnector {
+      <<interface>>
+      +Kind string
+      +CheckHealthAsync()
+      +FetchAsync()
+    }
+    class IAiProvider {
+      <<interface>>
+      +ProviderId string
+      +Capabilities AiCapabilities
+      +CheckHealthAsync()
+      +GenerateStructuredAsync~T~()
+    }
+    class IContentWorkspace {
+      <<interface>>
+      +QueryItemsAsync()
+      +UpsertItemsAsync()
+      +QueryDraftsAsync()
+      +SaveDraftAsync()
+    }
+    class IChannelFormatter {
+      <<interface>>
+      +Channel string
+      +Validate()
+      +Format()
+    }
+    class RssConnector
+    class StackExchangeConnector
+    class JsonConnector
+    class OllamaProvider
+    class OpenAiProvider
+    class AnthropicProvider
+    class JsonSnapshotWorkspace
+    class LinkedInFormatter
+    class MediumFormatter
+
+    IContentSourceConnector <|.. RssConnector
+    IContentSourceConnector <|.. StackExchangeConnector
+    IContentSourceConnector <|.. JsonConnector
+    IAiProvider <|.. OllamaProvider
+    IAiProvider <|.. OpenAiProvider
+    IAiProvider <|.. AnthropicProvider
+    IContentWorkspace <|.. JsonSnapshotWorkspace
+    IChannelFormatter <|.. LinkedInFormatter
+    IChannelFormatter <|.. MediumFormatter

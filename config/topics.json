@@ -1,0 +1,1176 @@
+{
+  "schemaVersion": 1,
+  "profile": {
+    "id": "fullstack-ai-dotnet",
+    "name": "Full-stack AI-powered .NET developer",
+    "defaultMinimumScore": 55,
+    "dailyCandidateLimit": 20,
+    "draftCandidateLimit": 5
+  },
+  "pillars": [
+    {
+      "id": "dotnet-csharp",
+      "name": ".NET and C#",
+      "priority": 1,
+      "weight": 1.0,
+      "keywords": [
+        {
+          "term": ".NET 10",
+          "weight": 5
+        },
+        {
+          "term": "ASP.NET Core",
+          "weight": 5
+        },
+        {
+          "term": "C#",
+          "weight": 4
+        },
+        {
+          "term": "Minimal APIs",
+          "weight": 4
+        },
+        {
+          "term": "Web API",
+          "weight": 4
+        },
+        {
+          "term": "Entity Framework Core",
+          "weight": 4
+        },
+        {
+          "term": "LINQ",
+          "weight": 3
+        },
+        {
+          "term": "dependency injection",
+          "weight": 3
+        },
+        {
+          "term": "background service",
+          "weight": 3
+        },
+        {
+          "term": "SignalR",
+          "weight": 3
+        },
+        {
+          "term": "gRPC",
+          "weight": 3
+        },
+        {
+          "term": "ADO.NET",
+          "weight": 2
+        },
+        {
+          "term": "WPF",
+          "weight": 1
+        },
+        {
+          "term": "WCF",
+          "weight": 1
+        }
+      ],
+      "subtopics": [
+        "language features",
+        "runtime",
+        "libraries",
+        "web APIs",
+        "data access",
+        "testing",
+        "security",
+        "desktop and legacy modernization"
+      ]
+    },
+    {
+      "id": "frontend-react",
+      "name": "React, TypeScript, and Web",
+      "priority": 1,
+      "weight": 0.95,
+      "keywords": [
+        {
+          "term": "React",
+          "weight": 5
+        },
+        {
+          "term": "TypeScript",
+          "weight": 5
+        },
+        {
+          "term": "Vite",
+          "weight": 4
+        },
+        {
+          "term": "React Hooks",
+          "weight": 3
+        },
+        {
+          "term": "JavaScript",
+          "weight": 3
+        },
+        {
+          "term": "web performance",
+          "weight": 4
+        },
+        {
+          "term": "accessibility",
+          "weight": 3
+        },
+        {
+          "term": "CSS",
+          "weight": 2
+        },
+        {
+          "term": "HTML",
+          "weight": 2
+        },
+        {
+          "term": "PWA",
+          "weight": 2
+        },
+        {
+          "term": "WebSockets",
+          "weight": 3
+        },
+        {
+          "term": "state management",
+          "weight": 3
+        }
+      ],
+      "subtopics": [
+        "component design",
+        "state",
+        "forms",
+        "routing",
+        "testing",
+        "accessibility",
+        "performance",
+        "UX"
+      ]
+    },
+    {
+      "id": "ai-engineering",
+      "name": "AI Engineering",
+      "priority": 1,
+      "weight": 1.0,
+      "keywords": [
+        {
+          "term": "large language model",
+          "weight": 5
+        },
+        {
+          "term": "LLM",
+          "weight": 5
+        },
+        {
+          "term": "generative AI",
+          "weight": 5
+        },
+        {
+          "term": "RAG",
+          "weight": 5
+        },
+        {
+          "term": "retrieval augmented generation",
+          "weight": 5
+        },
+        {
+          "term": "embeddings",
+          "weight": 4
+        },
+        {
+          "term": "vector database",
+          "weight": 3
+        },
+        {
+          "term": "structured output",
+          "weight": 4
+        },
+        {
+          "term": "tool calling",
+          "weight": 4
+        },
+        {
+          "term": "function calling",
+          "weight": 4
+        },
+        {
+          "term": "AI agents",
+          "weight": 5
+        },
+        {
+          "term": "AI evaluation",
+          "weight": 5
+        },
+        {
+          "term": "guardrails",
+          "weight": 4
+        },
+        {
+          "term": "local models",
+          "weight": 4
+        },
+        {
+          "term": "Ollama",
+          "weight": 4
+        },
+        {
+          "term": "Semantic Kernel",
+          "weight": 4
+        },
+        {
+          "term": "AI-assisted development",
+          "weight": 4
+        }
+      ],
+      "subtopics": [
+        "model APIs",
+        "RAG",
+        "agents",
+        "evaluation",
+        "safety",
+        "observability",
+        "cost",
+        "local inference",
+        "AI-assisted SDLC"
+      ]
+    },
+    {
+      "id": "mcp-prompting",
+      "name": "MCP, Prompt Engineering, and AI Tooling",
+      "priority": 1,
+      "weight": 1.0,
+      "keywords": [
+        {
+          "term": "Model Context Protocol",
+          "weight": 6
+        },
+        {
+          "term": "MCP server",
+          "weight": 6
+        },
+        {
+          "term": "MCP client",
+          "weight": 5
+        },
+        {
+          "term": "MCP tools",
+          "weight": 5
+        },
+        {
+          "term": "prompt engineering",
+          "weight": 5
+        },
+        {
+          "term": "context engineering",
+          "weight": 5
+        },
+        {
+          "term": "system prompt",
+          "weight": 3
+        },
+        {
+          "term": "prompt injection",
+          "weight": 5
+        },
+        {
+          "term": "tool safety",
+          "weight": 4
+        },
+        {
+          "term": "AI workflow",
+          "weight": 4
+        }
+      ],
+      "subtopics": [
+        "resources",
+        "prompts",
+        "tools",
+        "transports",
+        "authorization",
+        "consent",
+        "prompt design",
+        "context management"
+      ]
+    },
+    {
+      "id": "system-design",
+      "name": "System Design and Architecture",
+      "priority": 1,
+      "weight": 1.0,
+      "keywords": [
+        {
+          "term": "system design",
+          "weight": 5
+        },
+        {
+          "term": "API design",
+          "weight": 5
+        },
+        {
+          "term": "clean architecture",
+          "weight": 4
+        },
+        {
+          "term": "domain-driven design",
+          "weight": 4
+        },
+        {
+          "term": "DDD",
+          "weight": 4
+        },
+        {
+          "term": "CQRS",
+          "weight": 4
+        },
+        {
+          "term": "event driven",
+          "weight": 4
+        },
+        {
+          "term": "microservices",
+          "weight": 4
+        },
+        {
+          "term": "modular monolith",
+          "weight": 5
+        },
+        {
+          "term": "CAP theorem",
+          "weight": 3
+        },
+        {
+          "term": "caching",
+          "weight": 4
+        },
+        {
+          "term": "CDN",
+          "weight": 3
+        },
+        {
+          "term": "load balancing",
+          "weight": 4
+        },
+        {
+          "term": "concurrency",
+          "weight": 4
+        },
+        {
+          "term": "availability",
+          "weight": 4
+        },
+        {
+          "term": "reliability",
+          "weight": 4
+        },
+        {
+          "term": "reactive systems",
+          "weight": 3
+        },
+        {
+          "term": "SOA",
+          "weight": 2
+        },
+        {
+          "term": "design patterns",
+          "weight": 3
+        }
+      ],
+      "subtopics": [
+        "requirements",
+        "capacity",
+        "data models",
+        "APIs",
+        "consistency",
+        "messaging",
+        "failure modes",
+        "trade-offs"
+      ]
+    },
+    {
+      "id": "data-storage",
+      "name": "Data and Storage",
+      "priority": 2,
+      "weight": 0.85,
+      "keywords": [
+        {
+          "term": "SQL",
+          "weight": 4
+        },
+        {
+          "term": "PostgreSQL",
+          "weight": 4
+        },
+        {
+          "term": "SQL Server",
+          "weight": 4
+        },
+        {
+          "term": "T-SQL",
+          "weight": 3
+        },
+        {
+          "term": "NoSQL",
+          "weight": 4
+        },
+        {
+          "term": "Redis",
+          "weight": 4
+        },
+        {
+          "term": "MongoDB",
+          "weight": 3
+        },
+        {
+          "term": "Cosmos DB",
+          "weight": 4
+        },
+        {
+          "term": "database indexing",
+          "weight": 5
+        },
+        {
+          "term": "query optimization",
+          "weight": 5
+        },
+        {
+          "term": "data modeling",
+          "weight": 4
+        },
+        {
+          "term": "transactions",
+          "weight": 3
+        }
+      ],
+      "subtopics": [
+        "relational",
+        "NoSQL",
+        "cache",
+        "indexes",
+        "transactions",
+        "migration",
+        "data modeling"
+      ]
+    },
+    {
+      "id": "azure",
+      "name": "Microsoft Azure",
+      "priority": 1,
+      "weight": 0.95,
+      "keywords": [
+        {
+          "term": "Azure",
+          "weight": 5
+        },
+        {
+          "term": "Azure Functions",
+          "weight": 5
+        },
+        {
+          "term": "Azure App Service",
+          "weight": 4
+        },
+        {
+          "term": "Azure Container Apps",
+          "weight": 5
+        },
+        {
+          "term": "Azure Service Bus",
+          "weight": 5
+        },
+        {
+          "term": "Azure Kubernetes Service",
+          "weight": 4
+        },
+        {
+          "term": "AKS",
+          "weight": 4
+        },
+        {
+          "term": "Azure OpenAI",
+          "weight": 5
+        },
+        {
+          "term": "Application Insights",
+          "weight": 4
+        },
+        {
+          "term": "Bicep",
+          "weight": 4
+        },
+        {
+          "term": "Azure DevOps",
+          "weight": 4
+        },
+        {
+          "term": "Entra ID",
+          "weight": 4
+        }
+      ],
+      "subtopics": [
+        "compute",
+        "serverless",
+        "containers",
+        "identity",
+        "messaging",
+        "AI",
+        "observability",
+        "IaC"
+      ]
+    },
+    {
+      "id": "aws-serverless",
+      "name": "AWS and Serverless",
+      "priority": 2,
+      "weight": 0.85,
+      "keywords": [
+        {
+          "term": "AWS",
+          "weight": 5
+        },
+        {
+          "term": "AWS Lambda",
+          "weight": 5
+        },
+        {
+          "term": "Amazon ECS",
+          "weight": 4
+        },
+        {
+          "term": "Amazon EKS",
+          "weight": 4
+        },
+        {
+          "term": "API Gateway",
+          "weight": 4
+        },
+        {
+          "term": "DynamoDB",
+          "weight": 4
+        },
+        {
+          "term": "SQS",
+          "weight": 4
+        },
+        {
+          "term": "SNS",
+          "weight": 3
+        },
+        {
+          "term": "CloudWatch",
+          "weight": 3
+        },
+        {
+          "term": "serverless",
+          "weight": 5
+        },
+        {
+          "term": "AWS CDK",
+          "weight": 4
+        }
+      ],
+      "subtopics": [
+        "compute",
+        "serverless",
+        "containers",
+        "messaging",
+        "observability",
+        "IaC",
+        "cost"
+      ]
+    },
+    {
+      "id": "devops-platform",
+      "name": "DevOps and Platform Engineering",
+      "priority": 1,
+      "weight": 0.95,
+      "keywords": [
+        {
+          "term": "DevOps",
+          "weight": 5
+        },
+        {
+          "term": "Docker",
+          "weight": 5
+        },
+        {
+          "term": "Kubernetes",
+          "weight": 5
+        },
+        {
+          "term": "CI/CD",
+          "weight": 5
+        },
+        {
+          "term": "GitHub Actions",
+          "weight": 4
+        },
+        {
+          "term": "Azure Pipelines",
+          "weight": 4
+        },
+        {
+          "term": "infrastructure as code",
+          "weight": 5
+        },
+        {
+          "term": "Terraform",
+          "weight": 4
+        },
+        {
+          "term": "Bicep",
+          "weight": 4
+        },
+        {
+          "term": "GitOps",
+          "weight": 4
+        },
+        {
+          "term": "platform engineering",
+          "weight": 5
+        },
+        {
+          "term": "developer experience",
+          "weight": 4
+        },
+        {
+          "term": "observability",
+          "weight": 5
+        },
+        {
+          "term": "OpenTelemetry",
+          "weight": 5
+        }
+      ],
+      "subtopics": [
+        "containers",
+        "orchestration",
+        "pipelines",
+        "IaC",
+        "observability",
+        "platforms",
+        "FinOps"
+      ]
+    },
+    {
+      "id": "performance-reliability",
+      "name": "Performance and Reliability",
+      "priority": 1,
+      "weight": 0.95,
+      "keywords": [
+        {
+          "term": "performance optimization",
+          "weight": 5
+        },
+        {
+          "term": "profiling",
+          "weight": 5
+        },
+        {
+          "term": "benchmark",
+          "weight": 4
+        },
+        {
+          "term": "load testing",
+          "weight": 5
+        },
+        {
+          "term": "latency",
+          "weight": 4
+        },
+        {
+          "term": "throughput",
+          "weight": 4
+        },
+        {
+          "term": "garbage collection",
+          "weight": 4
+        },
+        {
+          "term": ".NET GC",
+          "weight": 5
+        },
+        {
+          "term": "memory leak",
+          "weight": 5
+        },
+        {
+          "term": "async",
+          "weight": 3
+        },
+        {
+          "term": "resilience",
+          "weight": 5
+        },
+        {
+          "term": "circuit breaker",
+          "weight": 4
+        },
+        {
+          "term": "SLO",
+          "weight": 4
+        },
+        {
+          "term": "incident",
+          "weight": 3
+        }
+      ],
+      "subtopics": [
+        "profiling",
+        "memory",
+        "CPU",
+        "database",
+        "network",
+        "load",
+        "SRE",
+        "capacity"
+      ]
+    },
+    {
+      "id": "security",
+      "name": "Application and AI Security",
+      "priority": 1,
+      "weight": 0.95,
+      "keywords": [
+        {
+          "term": "application security",
+          "weight": 5
+        },
+        {
+          "term": "OWASP",
+          "weight": 5
+        },
+        {
+          "term": "OAuth",
+          "weight": 4
+        },
+        {
+          "term": "OpenID Connect",
+          "weight": 4
+        },
+        {
+          "term": "authentication",
+          "weight": 4
+        },
+        {
+          "term": "authorization",
+          "weight": 4
+        },
+        {
+          "term": "threat modeling",
+          "weight": 5
+        },
+        {
+          "term": "zero trust",
+          "weight": 3
+        },
+        {
+          "term": "software supply chain",
+          "weight": 4
+        },
+        {
+          "term": "secrets management",
+          "weight": 4
+        },
+        {
+          "term": "cryptography",
+          "weight": 3
+        },
+        {
+          "term": "prompt injection",
+          "weight": 5
+        },
+        {
+          "term": "AI security",
+          "weight": 5
+        }
+      ],
+      "subtopics": [
+        "identity",
+        "web security",
+        "threat modeling",
+        "supply chain",
+        "AI safety",
+        "privacy"
+      ]
+    },
+    {
+      "id": "testing-quality",
+      "name": "Testing and Software Quality",
+      "priority": 2,
+      "weight": 0.85,
+      "keywords": [
+        {
+          "term": "unit testing",
+          "weight": 4
+        },
+        {
+          "term": "integration testing",
+          "weight": 5
+        },
+        {
+          "term": "contract testing",
+          "weight": 5
+        },
+        {
+          "term": "end-to-end testing",
+          "weight": 4
+        },
+        {
+          "term": "test automation",
+          "weight": 4
+        },
+        {
+          "term": "mutation testing",
+          "weight": 3
+        },
+        {
+          "term": "software testing",
+          "weight": 4
+        },
+        {
+          "term": "AI evaluation",
+          "weight": 5
+        },
+        {
+          "term": "quality engineering",
+          "weight": 4
+        }
+      ],
+      "subtopics": [
+        "unit",
+        "integration",
+        "contract",
+        "UI",
+        "performance",
+        "AI evals",
+        "quality gates"
+      ]
+    },
+    {
+      "id": "interviews-dsa",
+      "name": "Tech Interviews and Algorithms",
+      "priority": 1,
+      "weight": 0.9,
+      "keywords": [
+        {
+          "term": "technical interview",
+          "weight": 5
+        },
+        {
+          "term": "system design interview",
+          "weight": 5
+        },
+        {
+          "term": "data structures",
+          "weight": 5
+        },
+        {
+          "term": "algorithms",
+          "weight": 5
+        },
+        {
+          "term": "Big-O",
+          "weight": 4
+        },
+        {
+          "term": "arrays",
+          "weight": 2
+        },
+        {
+          "term": "strings",
+          "weight": 2
+        },
+        {
+          "term": "hash table",
+          "weight": 3
+        },
+        {
+          "term": "linked list",
+          "weight": 3
+        },
+        {
+          "term": "stack",
+          "weight": 2
+        },
+        {
+          "term": "queue",
+          "weight": 2
+        },
+        {
+          "term": "binary tree",
+          "weight": 3
+        },
+        {
+          "term": "trie",
+          "weight": 3
+        },
+        {
+          "term": "heap",
+          "weight": 3
+        },
+        {
+          "term": "graph theory",
+          "weight": 3
+        },
+        {
+          "term": "recursion",
+          "weight": 3
+        },
+        {
+          "term": "sorting",
+          "weight": 2
+        },
+        {
+          "term": "searching",
+          "weight": 2
+        },
+        {
+          "term": "dynamic programming",
+          "weight": 4
+        },
+        {
+          "term": "greedy algorithm",
+          "weight": 3
+        },
+        {
+          "term": "backtracking",
+          "weight": 3
+        },
+        {
+          "term": "bit manipulation",
+          "weight": 2
+        }
+      ],
+      "subtopics": [
+        "DSA",
+        "coding",
+        "system design",
+        "behavioral",
+        "leadership",
+        "preparation roadmaps"
+      ]
+    },
+    {
+      "id": "leadership-career",
+      "name": "Engineering Leadership, Communication, and Career",
+      "priority": 1,
+      "weight": 0.95,
+      "keywords": [
+        {
+          "term": "engineering leadership",
+          "weight": 5
+        },
+        {
+          "term": "technical leadership",
+          "weight": 5
+        },
+        {
+          "term": "senior software engineer",
+          "weight": 5
+        },
+        {
+          "term": "staff engineer",
+          "weight": 5
+        },
+        {
+          "term": "career roadmap",
+          "weight": 5
+        },
+        {
+          "term": "mentoring",
+          "weight": 4
+        },
+        {
+          "term": "stakeholder management",
+          "weight": 5
+        },
+        {
+          "term": "communication skills",
+          "weight": 5
+        },
+        {
+          "term": "design review",
+          "weight": 4
+        },
+        {
+          "term": "decision record",
+          "weight": 4
+        },
+        {
+          "term": "influence without authority",
+          "weight": 5
+        },
+        {
+          "term": "roadmap",
+          "weight": 4
+        },
+        {
+          "term": "incident leadership",
+          "weight": 4
+        },
+        {
+          "term": "code review",
+          "weight": 3
+        },
+        {
+          "term": "Agile",
+          "weight": 2
+        },
+        {
+          "term": "Scrum",
+          "weight": 2
+        }
+      ],
+      "subtopics": [
+        "senior path",
+        "staff path",
+        "mentoring",
+        "communication",
+        "strategy",
+        "execution",
+        "influence",
+        "interviews"
+      ]
+    },
+    {
+      "id": "developer-productivity",
+      "name": "Developer Productivity and Practices",
+      "priority": 2,
+      "weight": 0.8,
+      "keywords": [
+        {
+          "term": "Git",
+          "weight": 3
+        },
+        {
+          "term": "code review",
+          "weight": 4
+        },
+        {
+          "term": "developer productivity",
+          "weight": 5
+        },
+        {
+          "term": "developer experience",
+          "weight": 5
+        },
+        {
+          "term": "documentation",
+          "weight": 3
+        },
+        {
+          "term": "inner source",
+          "weight": 3
+        },
+        {
+          "term": "pair programming",
+          "weight": 3
+        },
+        {
+          "term": "trunk-based development",
+          "weight": 4
+        },
+        {
+          "term": "technical debt",
+          "weight": 4
+        }
+      ],
+      "subtopics": [
+        "Git",
+        "code review",
+        "documentation",
+        "workflow",
+        "DX",
+        "technical debt"
+      ]
+    },
+    {
+      "id": "adjacent-ecosystem",
+      "name": "Adjacent Technology Ecosystem",
+      "priority": 3,
+      "weight": 0.45,
+      "keywords": [
+        {
+          "term": "Python",
+          "weight": 2
+        },
+        {
+          "term": "Node.js",
+          "weight": 2
+        },
+        {
+          "term": "Java",
+          "weight": 1
+        },
+        {
+          "term": "Spring",
+          "weight": 1
+        },
+        {
+          "term": "Go",
+          "weight": 2
+        },
+        {
+          "term": "Golang",
+          "weight": 2
+        },
+        {
+          "term": "Rust",
+          "weight": 2
+        },
+        {
+          "term": "GraphQL",
+          "weight": 3
+        },
+        {
+          "term": "Angular",
+          "weight": 1
+        },
+        {
+          "term": "Vue",
+          "weight": 1
+        },
+        {
+          "term": "Flutter",
+          "weight": 1
+        },
+        {
+          "term": "React Native",
+          "weight": 1
+        },
+        {
+          "term": "Kotlin",
+          "weight": 1
+        },
+        {
+          "term": "Swift",
+          "weight": 1
+        },
+        {
+          "term": "PHP",
+          "weight": 1
+        },
+        {
+          "term": "Ruby",
+          "weight": 1
+        }
+      ],
+      "subtopics": [
+        "comparisons",
+        "interoperability",
+        "industry awareness",
+        "polyglot architecture"
+      ]
+    }
+  ],
+  "globalExclusions": [
+    "coupon",
+    "limited-time course offer",
+    "salary survey form",
+    "job vacancy",
+    "sponsored webinar registration",
+    "casino",
+    "crypto price prediction"
+  ]
+}

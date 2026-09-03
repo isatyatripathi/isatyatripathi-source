@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "id": "provider-abstraction-checklist",
+      "sourceName": "Personal research note",
+      "title": "Architecture checklist for an AI-provider abstraction in ASP.NET Core",
+      "summary": "A reusable checklist for keeping model providers replaceable without hiding provider-specific capabilities.",
+      "content": "Define task-level routes, expose provider capabilities, enforce timeouts and cancellation, keep secrets in environment variables, capture usage metadata, validate structured output, and retain a deterministic fallback for local development.",
+      "author": "Satya",
+      "tags": [
+        "dotnet",
+        "asp.net-core",
+        "ai",
+        "architecture",
+        "dependency-injection"
+      ],
+      "notes": "Internal seed note. Add links to verified external sources before using factual claims."
+    },
+    {
+      "id": "mcp-server-threat-model",
+      "sourceName": "Personal research note",
+      "title": "Threat-model questions for a local .NET MCP server",
+      "summary": "Questions to ask before exposing tools, prompts, or resources from an MCP server.",
+      "content": "What is the trust boundary? Which operations require explicit consent? How are tool inputs validated? Which resources may contain untrusted instructions? What is logged, redacted, rate-limited, and reversible?",
+      "author": "Satya",
+      "tags": [
+        "dotnet",
+        "mcp",
+        "security",
+        "ai",
+        "threat-modeling"
+      ],
+      "notes": "Internal seed note. Treat it as an outline, not an external source."
+    },
+    {
+      "id": "senior-engineer-content-lens",
+      "sourceName": "Personal research note",
+      "title": "A senior-engineer lens for turning tech news into useful content",
+      "summary": "A content signal is more valuable when it is connected to a decision, trade-off, experiment, and measurable result.",
+      "content": "For each signal: verify the source, name the engineering decision it could affect, identify assumptions, design a reversible experiment, define quality and operational measures, and share limitations alongside the takeaway.",
+      "author": "Satya",
+      "tags": [
+        "engineering-leadership",
+        "career",
+        "communication",
+        "content-strategy"
+      ],
+      "notes": "Internal seed note for testing the local JSON connector."
+    }
+  ]
+}

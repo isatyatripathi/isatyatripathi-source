@@ -1,0 +1,18 @@
+digraph G {
+  graph [rankdir=LR, bgcolor="transparent", pad=0.25, nodesep=0.55, ranksep=0.8, fontname="Arial"];
+  node [shape=box, style="rounded,filled", fontname="Arial", fontsize=11, margin="0.18,0.12", penwidth=1.3];
+  edge [fontname="Arial", fontsize=9, color="#51606b", arrowsize=0.8, penwidth=1.2];
+  user [label="Author / Reviewer", fillcolor="#fff3cd", color="#8a6d3b"];
+  ui [label="Local Browser UI\nReact + Vite + TypeScript", fillcolor="#e8f4ff", color="#1d70a2"];
+  app [label="DevSignal Studio\nASP.NET Core 10", fillcolor="#d9edf7", color="#1d70a2"];
+  sources [label="Approved Tech Sources\nRSS • APIs • JSON • Manual", fillcolor="#f4e8ff", color="#7a4ca0"];
+  ai [label="AI Providers\nOllama • OpenAI • Anthropic", fillcolor="#f4e8ff", color="#7a4ca0"];
+  files [label="Local JSON Workspace\nConfig + snapshots", shape=cylinder, fillcolor="#e8f4ff", color="#1d70a2"];
+  social [label="LinkedIn / Medium\nManual publication", fillcolor="#f4e8ff", color="#7a4ca0"];
+  user -> ui [label="research, edit, approve"];
+  ui -> app [label="localhost API"];
+  app -> sources [label="bounded fetch"];
+  app -> ai [label="structured generation"];
+  app -> files [dir=both];
+  ui -> social [label="copy / export"];
+}
